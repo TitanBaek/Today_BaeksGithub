@@ -47,6 +47,20 @@ namespace Today_BaeksGithub.LevelTest
             return false;
         }
 
+        public static void Question4(int inputNumber)
+        {
+            int sumNumber = 0;
+            inputNumber = int.Parse(Console.ReadLine());
+            while (inputNumber > 0)
+            {
+                sumNumber += inputNumber % 10;
+                inputNumber = inputNumber / 10;
+            }
+
+            Console.WriteLine(sumNumber);
+        }
+
+
 
 
 
