@@ -29,5 +29,25 @@ namespace Today_BaeksGithub.UpAndDown
             GameRoof(gp);
 
         }
+
+        public static void GameRoof(UpAndDown_GamePlayer gp)
+        {
+            // 초기세팅
+
+            Console.Clear();
+            Console.WriteLine($"환영합니다! {gp.PLAYERNAME}님!");
+            Console.WriteLine("그럼 업&다운 게임을 시작합니다!");
+            Console.WriteLine("아무키나 누르세요.");
+            Console.ReadKey();
+
+            // 게임 클래스 생성
+
+            // 게임루프
+            while (true)
+            {
+
+            }
+        }
+
     }
 }
