@@ -24,6 +24,16 @@ namespace Today_BaeksGithub.LevelTest
 
         }
 
+        public static void Question2()
+        {
+            Console.Write("문자열을 입력하세요 :");
+            string dataStr = Console.ReadLine();
+            string[] arrayStr = dataStr.Split(" ");
+
+            Console.WriteLine(arrayStr.Length);
+        }
+
+
 
     }
 }
