@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Today_BaeksGithub.UpAndDown
 {
-    internal class UpAndDown_EventClass
+    public class UpAndDown_EventClass
     {
+        public static Action onEvent;
+
+        public static void SendMessage(string msg)
+        {
+
+        }
     }
 }
