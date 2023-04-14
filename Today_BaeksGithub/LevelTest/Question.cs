@@ -33,6 +33,21 @@ namespace Today_BaeksGithub.LevelTest
             Console.WriteLine(arrayStr.Length);
         }
 
+        static bool Question3(int n)
+        {
+            //주어진 숫자가 소수인지 확인하는 함수구현
+            for (int i = n; i >= 1; i--)
+            {
+                // n % i 의 나머지가 0이고 i와 n은 다른 수이며, i 가 1보다 크면 소수가 아니다.
+                if (n % i == 0 && i != n && i > 1)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
 
 
     }
