@@ -60,6 +60,33 @@ namespace Today_BaeksGithub.LevelTest
             Console.WriteLine(sumNumber);
         }
 
+        public static void Question5(int[] array1, int[] array2, int[] array3)
+        {
+            string sameNumber = "";
+            int[] sumArray = array1.Concat(array2).ToArray();
+            sumArray = sumArray.Concat(array3).ToArray();
+
+            for (int i = 0; i < sumArray.Length; i++)
+            {
+                for (int y = 1; y < sumArray.Length; y++)
+                {
+                    if (i == y)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        if (sameNumber.IndexOf(sumArray[y].ToString()) < 0 && sumArray[i] == sumArray[y])
+                        {
+                            sameNumber += $"{sumArray[y]} ";
+                        }
+                    }
+                }
+            }
+            Console.WriteLine(sameNumber);
+        }
+
+
 
 
 
