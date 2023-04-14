@@ -24,6 +24,7 @@ namespace Today_BaeksGithub.LevelTest
 
         }
 
+
         public static void Question2()
         {
             Console.Write("문자열을 입력하세요 :");
@@ -33,7 +34,8 @@ namespace Today_BaeksGithub.LevelTest
             Console.WriteLine(arrayStr.Length);
         }
 
-        static bool Question3(int n)
+
+        public static bool Question3(int n)
         {
             //주어진 숫자가 소수인지 확인하는 함수구현
             for (int i = n; i >= 1; i--)
@@ -47,6 +49,7 @@ namespace Today_BaeksGithub.LevelTest
             return false;
         }
 
+
         public static void Question4(int inputNumber)
         {
             int sumNumber = 0;
@@ -59,6 +62,7 @@ namespace Today_BaeksGithub.LevelTest
 
             Console.WriteLine(sumNumber);
         }
+
 
         public static void Question5(int[] array1, int[] array2, int[] array3)
         {
