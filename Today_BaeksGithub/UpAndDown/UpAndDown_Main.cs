@@ -18,5 +18,16 @@ namespace Today_BaeksGithub.UpAndDown
                 default: break;
             }
         }
+
+        public static void PlayerSetting()
+        {
+            Console.Clear();
+            Console.WriteLine("당신의 이름은 무엇인가요?");
+            Console.Write("이름 : ");
+            UpAndDown_GamePlayer gp = new UpAndDown_GamePlayer(Console.ReadLine().ToUpper());
+
+            GameRoof(gp);
+
+        }
     }
 }
